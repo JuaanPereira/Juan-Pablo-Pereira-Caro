@@ -1,0 +1,88 @@
+/* Add your custom CSS styles here */
+
+/* Example: Center the text in the header section */
+header {
+    text-align: center;
+}
+  
+  /* Example: Add some padding and background color to the project section */
+#projects {
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+  
+  /* Example: Add some margin to the footer section */
+  footer {
+    margin-top: 20px;
+  }
+  
+  /* Example: Customize the navbar with a purple gradient background */
+  .navbar {
+    background: linear-gradient(to right, #8731E8, #6834E8);
+    background: -webkit-linear-gradient(left, #8731E8, #6834E8);
+    background: -moz-linear-gradient(left, #8731E8, #6834E8);
+    background: -o-linear-gradient(left, #8731E8, #6834E8);
+  }
+
+/* Hide the default button styles */
+.button-toggle {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: inherit;
+  font-weight: bold;
+  color: #000; /* Set the color to match your design */
+  text-align: center;
+  width: 100%; /* Take the same width as its parent element */
+}
+
+/* Style the section title appearance */
+.section-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 10px;
+  color: #000; /* Set the color to match your design */
+  text-align: center;
+  width: 100%; /* Take the same width as its parent element */
+}
+
+/* Align the text inside the section content container */
+.section-content {
+  display: none;
+  text-align: center;
+}
+/* Add this to make the "about-container" a flex container */
+#about .about-container {
+  display: flex;
+  align-items: stretch; /* Stretch both divs to the same height */
+}
+
+/* Add this to make the left div take 30% width */
+#about .about-container .left-content {
+  width: 30%;
+}
+
+/* Add this to make the right div take 70% width */
+#about .about-container .right-content {
+  width: 70%;
+  overflow-y: auto;
+  /* Set a minimum height that takes up the remaining height (100% - height of the left div) */
+  min-height: calc(50vh - 50px); /* Assuming the left div has a height of 50px (adjust if needed) */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.icon-links {
+  display: flex;
+  align-items: center;
+}
